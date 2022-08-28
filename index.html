@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://kit.fontawesome.com/88b9fd3976.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+    <div class="container"></div>
+    <nav>
+        <img src="Randy-removebg-preview.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <p>ISE student.</p>
+        <h1>Hi, I'm <span>Raghavendra</span> Jayateerth<br> from Atria Institute of Technology</h1>
+    </div>
+</div>
+<!-------about------>
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Dp.jpeg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Ardent, ambitious student seeking an  opportunity to make a real
+                    difference in the inspiring field of IT. I'm Curently pursing
+                    Engineering course (ISE) from Atria institute of Technology
+                    and in my 4th year. My interests are Football and Basketball. I
+                    also like to read Mangas and see Animes.</p>
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span> Web Developer</span><br> Designing Webpages using HTML, CSS and Javascript</li>
+                        <li><span> App Developer</span><br> App Development using Android Studios</li>
+                        <li><span> Progammer</span><br> Languages known- C,C++, Java, Python.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents"id="experience">
+                    <ul>
+                        <li><span> Fresher</span><br> No prior experience.</li>
+                        <li><span> Internship</span><br> 1Stop.</li>
+                        
+                    </ul>
+                </div>
+                <div class="tab-contents"id="education">
+                    <ul>
+                        <li><span> 2019-present</span><br>Atria Institute of Technology</li>
+                        <li><span> 2017-2019</span><br> Kle's S Nijilingaapa's College </li>
+                        <li><span> 2006-2017</span><br> Florence Public School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Services----------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-android"></i>
+                <h2>Wheelo</h2>
+                <p>Android app built using Kotlin.</p>
+                <p>Uses OpenStreetMap API to get all geodata from any place on earth.</p>
+                <p>Used to find the nearest Hospitals, police stations and toilets near the user's current.</p>
+                <a href="https://github.com/Raghavj2000/WheelchairGuidance1">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-earth-asia"></i>
+                <h2>Abhiyaantrikee</h2>
+                <p>Built using Html, CSS, Javascript.</p>
+                <p>Students can access all VTU notes from all branches and all semesters from this site.</p>
+                <a href="https://abhiyaantrikee2021.github.io/Abhiyaantrikee/">Learn more...</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>Student DBMS</h2>
+                <p>Done using Html,CSS, Javascript, MySQL.</p>
+                <p>It's a student ERP Used to register students and their details.</p>
+                <p>Also admins can modify the details.</p>
+                <a href="https://github.com/Raghavj2000/Student-Database-management-system">Learn more...</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------contact----- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> raghavjayateerth@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 9113208407</p>
+                <div class="social-icons">
+                    <a href=" https://www.facebook.com/raghav.jayateerth.1"><i class="fa-brands fa-facebook"></i></a>
+                    <a href=" https://www.instagram.com/raghavj_/?igshid=YmMyMTA2M2Y%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/rj2001"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/rrrr (1).pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form action="https://formspree.io/f/mgeqvpzw" method="POST">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyrights © reserved by Raghavendra J</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks= document.getElementsByClassName("tab-links");
+    var tabcontents= document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }
+</script>
+</body>
+
+</html>
